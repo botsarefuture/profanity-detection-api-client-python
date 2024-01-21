@@ -3,46 +3,48 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)
 
-This Python client enables easy interaction with the Profanity Detection API, provided by LuovaClub for identifying and analyzing profanity in text.
+A Python client for LuovaClub's Profanity Detection API, designed to identify and analyze profanity in text.
 
-## Getting Started
+## Usage
 
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/profanity-detection-api-client-python.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd profanity-detection-api-client-python
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Usage
+### Example
 
 1. Open `ProfanityDetectionClient.py`.
-2. Update the `base_url` variable with the actual API base URL.
-3. Run the example script:
+2. Run the example script:
 
    ```bash
    python ProfanityDetectionClient.py
    ```
 
-## Example
+### Integration
+
+To integrate the Profanity Detection API client into your project, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/profanity-detection-api-client-python.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd profanity-detection-api-client-python
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Open `ProfanityDetectionClient.py`.
+5. Run the example script or incorporate the `ProfanityDetectionClient` class into your project.
 
 ```python
 from ProfanityDetectionClient import ProfanityDetectionClient
 
-# Initialize the Profanity Detection API client
+# Initialize the Profanity Detection API client with the API base URL
 api_url = 'https://profanity.luova.club/api'
 profanity_client = ProfanityDetectionClient(api_url)
 
